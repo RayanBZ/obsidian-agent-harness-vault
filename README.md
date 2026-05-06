@@ -1,5 +1,5 @@
 # Obsidian // Agent Harness Vault
-!(https://github.com/RayanBZ/obsidian-agent-harness-vault/blob/6e3fc0d6f945eb79d3b06ed53c7e17b29a2db11e/Obsidian_Agent%20Harness%20Vault.png)
+!(/main/bsidian_Agent Harness Vault.png)
 A local, Windows-friendly orchestration system that turns an Obsidian knowledge vault into an executable multi-agent workspace. The project combines a structured vault, agent skill files, routing MOCs, persistent mental-model notes, and a Python CLI named agent-vault. Instead of using Obsidian only as documentation, the harness treats the vault as the source of truth for agent roles, team boundaries, task routing, context, and output destinations.
 
 The MVP focuses on a sequential, controlled workflow rather than immediately launching many agents in parallel. Users can run commands such as agent-vault prd, agent-vault dev, agent-vault review, and agent-vault route to initialize planning, development, code/document review, or general orchestration tasks. Agent Depth settings allow the user to choose how much reasoning and review effort the harness should apply, from quick routing to deeper validation passes.
