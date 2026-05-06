@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Local/session artifacts
+05-Sessions/*
+!.gitkeep
+.env
+.env.*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
