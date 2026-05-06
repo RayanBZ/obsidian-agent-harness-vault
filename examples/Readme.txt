@@ -32,3 +32,15 @@ agent-vault --vault $Vault doctor; agent-vault --vault $Vault route "Implement c
 
 # Review the harness and open generated session folder
 agent-vault --vault $Vault review "Review this codebase for MVP release readiness" . --agent-depth max --dry-run; explorer "$Vault\05-Sessions"
+
+
+
+###Example Commands###
+$Vault = "$env:USERPROFILE\Documents\Obsidian\obsidian-agent-vault"
+
+agent-vault --vault $Vault doctor --repair
+agent-vault --vault $Vault route "Build a PRD for an Obsidian agent harness"
+agent-vault --vault $Vault prd "Create a PRD for a local Agent Vault harness" --agent-depth deep --dry-run
+agent-vault --vault $Vault dev "Implement robust zip and folder ingest in the CLI" --agent-depth standard --dry-run
+agent-vault --vault $Vault review "Review the vault skill files for consistency" "$Vault\.pi\multi-team\agents" --agent-depth deep --dry-run
+agent-vault --vault $Vault status
