@@ -1,10 +1,14 @@
 # Obsidian // Agent Harness Vault
 
-Local Python CLI harness for an Obsidian-based multi-agent vault.
+A local, Windows-friendly orchestration system that turns an Obsidian knowledge vault into an executable multi-agent workspace. The project combines a structured vault, agent skill files, routing MOCs, persistent mental-model notes, and a Python CLI named agent-vault. Instead of using Obsidian only as documentation, the harness treats the vault as the source of truth for agent roles, team boundaries, task routing, context, and output destinations.
+
+The MVP focuses on a sequential, controlled workflow rather than immediately launching many agents in parallel. Users can run commands such as agent-vault prd, agent-vault dev, agent-vault review, and agent-vault route to initialize planning, development, code/document review, or general orchestration tasks. Agent Depth settings allow the user to choose how much reasoning and review effort the harness should apply, from quick routing to deeper validation passes.
+
+The harness owns configuration loading, prompt construction, session logging, ingest manifests, Claude CLI subprocess calls, file routing, and fail-point reporting. Claude owns reasoning, writing, planning, reviewing, and synthesis. The goal is to create a repeatable local system where PRDs, code plans, reviews, logs, and outputs are automatically organized back into the Obsidian vault.
 
 ## Package: Agent Vault MVP Harness
 
-This is a local Python CLI harness for an Obsidian-based multi-agent vault. It turns the vault from a structured instruction/memory system into an executable command surface like:
+Below are examples of use-cases for the Agent Harness structure - all logic is built and routed through Obsidian + Python, while Claude (or your choice of LLM) maintains the reasoning, writing, planning, and synthesis of your agent substructure. 
 
 ```powershell
 agent-vault run "Analyze this project and create an implementation plan"
